@@ -1,0 +1,2 @@
+/Users/louisrobinson/Documents/Unity-Projects/ProbeLightingTest/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+/Users/louisrobinson/Documents/Unity-Projects/ProbeLightingTest/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
