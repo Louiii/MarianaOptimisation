@@ -18,7 +18,7 @@ public class GradMovement : MonoBehaviour
         t += 1;
         if (t < positions.Length - 1)
         {
-            Invoke("Hop", 0.1f);
+            Invoke("Hop", 0.15f);
         }
     }
 }

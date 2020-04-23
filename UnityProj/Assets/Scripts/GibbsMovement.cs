@@ -9,7 +9,7 @@ public class GibbsMovement : MonoBehaviour
 {
     public GameObject xSlice;
     public GameObject zSlice;
-    private bool Up = true;
+    private bool Up = false;
 
     private Vector3 center = new Vector3(465, 75, 372);
     public float speed = 4.0f;
@@ -19,7 +19,7 @@ public class GibbsMovement : MonoBehaviour
     public float rad = 50.0f;
     // Start is called before the first frame update
     string m_Path;
-    private int t = 0;
+    private int t = 1;
     public Vector3[] positions;
 
     void Start()
@@ -32,8 +32,8 @@ public class GibbsMovement : MonoBehaviour
         positions = LoadText(m_Path + "/Paths/Gibbs.txt");
         Debug.Log(positions.Length);
 
-        transform.transform.position = positions[0];
-        Invoke("Slice", 2.0f);
+        transform.transform.position = positions[t];
+        Invoke("Slice", 1.5f);
     }
 
     public void Slice()

@@ -2,7 +2,7 @@
 
 <img src="UnityScreenshot.png" width="800"/>
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/zJ4bPBKvtCw/0.jpg)](https://www.youtube.com/watch?v=zJ4bPBKvtCw&feature=youtu.be)
 
 I created this project to visualise different optimisation algorithms attempting to find the minimum point on a 2D surface. The surface I chose to use was a section of the Mariana trench, it has many local minima, steep cliffs and wide flat regions making it challenging for most algorithms.
 
@@ -21,7 +21,7 @@ Real data           |  Smooth Mariana
 <img src="CosineTransform/True-Mariana.png" width="320"/> | <img src="CosineTransform/SmoothMarianaPlot.png" width="320"/>
 
 I then demonstrate how different algorithms can be used to search for the minimum point of the surface. I have so far implemented the following algorithms:
-- ABC (Artifical Bee Colony)
+- ABC (Artificial Bee Colony)
 - Gradient Descent
 - Adam (ADAptive Momentum estimation)
 - Gibbs Sampling

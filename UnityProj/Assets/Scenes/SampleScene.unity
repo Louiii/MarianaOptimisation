@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.410412, g: 0.4904825, b: 0.5630974, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -283,6 +283,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f1c62e1b36b4e0ab6845799aa4019f, type: 3}
+--- !u!1 &677398329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 677398331}
+  - component: {fileID: 677398330}
+  m_Layer: 0
+  m_Name: AdamSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &677398330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677398329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c436f46413e4303b64affd7466e2ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adamBall: {fileID: 6022300778912290172, guid: 27d15cba172714bd9af77e9a018690ac,
+    type: 3}
+--- !u!4 &677398331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677398329}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 530.84674, y: -14.313751, z: 449.4652}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &774620316 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5637399588486628844, guid: f69464e6f817f402cbb0c9297f2f2c5e,
@@ -613,6 +658,7 @@ MonoBehaviour:
   Gibbs: {fileID: 1107205606}
   Hive: {fileID: 2129972954}
   Grad: {fileID: 252436925}
+  Adam: {fileID: 677398329}
 --- !u!4 &1636201392
 Transform:
   m_ObjectHideFlags: 0

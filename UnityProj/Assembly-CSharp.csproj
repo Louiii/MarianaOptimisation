@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{62126D47-C84A-3348-171A-96CB923687F6}</ProjectGuid>
+    <ProjectGuid>{69B6C8F0-A092-6A6A-098C-0C119DFDB7A6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,6 +62,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AdamMovement.cs" />
+    <Compile Include="Assets\Scripts\AdamSpawner.cs" />
     <Compile Include="Assets\Scripts\Beehaviour.cs" />
     <Compile Include="Assets\Scripts\BeeHive.cs" />
     <Compile Include="Assets\Scripts\CamMovement.cs" />
@@ -71,80 +73,125 @@
     <Compile Include="Assets\Scripts\GradSpawner.cs" />
     <Compile Include="Assets\Scripts\MHspawner.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
+    <None Include="Assets\Paths\Adam\A28.txt" />
     <None Include="Assets\Paths\GradDescs\G45.txt" />
     <None Include="Assets\Paths\Bees\Bee11.txt" />
+    <None Include="Assets\Paths\Adam\A48.txt" />
     <None Include="Assets\Paths\Bees\Bee19.txt" />
     <None Include="Assets\Paths\GradDescs\G28.txt" />
     <None Include="Assets\Paths\GradDescs\G26.txt" />
     <None Include="Assets\Paths\Bees\Bee15.txt" />
+    <None Include="Assets\Paths\Adam\A45.txt" />
+    <None Include="Assets\Paths\Adam\A27.txt" />
     <None Include="Assets\Paths\Bees\Bee18.txt" />
     <None Include="Assets\Paths\GradDescs\G6.txt" />
     <None Include="Assets\Paths\GradDescs\G48.txt" />
+    <None Include="Assets\Paths\Adam\A10.txt" />
     <None Include="Assets\Paths\MHs\MH8.txt" />
     <None Include="Assets\Paths\Gibbs.txt" />
+    <None Include="Assets\Paths\Adam\A6.txt" />
+    <None Include="Assets\Paths\Adam\A9.txt" />
     <None Include="Assets\Paths\GradDescs\G14.txt" />
     <None Include="Assets\Paths\GradDescs\G31.txt" />
     <None Include="Assets\Paths\GradDescs\G32.txt" />
     <None Include="Assets\Paths\Bees\Bee14.txt" />
     <None Include="Assets\Paths\MHs\MH9.txt" />
+    <None Include="Assets\Paths\Adam\A42.txt" />
     <None Include="Assets\Paths\GradDescs\G21.txt" />
     <None Include="Assets\Paths\Bees\Bee3.txt" />
+    <None Include="Assets\Paths\Adam\A2.txt" />
+    <None Include="Assets\Paths\Adam\A1.txt" />
     <None Include="Assets\Paths\GradDescs\G12.txt" />
+    <None Include="Assets\Paths\Adam\A26.txt" />
     <None Include="Assets\Paths\MHs\MH7.txt" />
+    <None Include="Assets\Paths\Adam\A29.txt" />
+    <None Include="Assets\Paths\Adam\A15.txt" />
     <None Include="Assets\Paths\Bees\Bee8.txt" />
     <None Include="Assets\Paths\GradDescs\G3.txt" />
     <None Include="Assets\Paths\Bees\Bee2.txt" />
     <None Include="Assets\Paths\GradDescs\G19.txt" />
+    <None Include="Assets\Paths\Adam\A0.txt" />
     <None Include="Assets\Paths\GradDescs\G36.txt" />
+    <None Include="Assets\Paths\Adam\A30.txt" />
     <None Include="Assets\Paths\GradDescs\G42.txt" />
+    <None Include="Assets\Paths\Adam\A19.txt" />
     <None Include="Assets\Paths\GradDescs\G27.txt" />
     <None Include="Assets\Paths\GradDescs\G16.txt" />
     <None Include="Assets\Paths\Bees\Bee1.txt" />
     <None Include="Assets\Paths\GradDescs\G37.txt" />
     <None Include="Assets\Paths\MH.txt" />
+    <None Include="Assets\Paths\Adam\A33.txt" />
+    <None Include="Assets\Paths\Adam\A23.txt" />
     <None Include="Assets\Paths\GradDescs\G25.txt" />
     <None Include="Assets\Paths\GradDescs\G10.txt" />
     <None Include="Assets\Paths\GradDescs\G24.txt" />
+    <None Include="Assets\Paths\Adam\A40.txt" />
     <None Include="Assets\Paths\GradDescs\G5.txt" />
+    <None Include="Assets\Paths\Adam\A34.txt" />
     <None Include="Assets\Paths\GradDescs\G35.txt" />
+    <None Include="Assets\Paths\Adam\A16.txt" />
     <None Include="Assets\Paths\GradDescs\G15.txt" />
     <None Include="Assets\Paths\GradDescs\G11.txt" />
     <None Include="Assets\Paths\GradDescs\G17.txt" />
     <None Include="Assets\Basic Metal Texture Pack\readme.txt" />
+    <None Include="Assets\Paths\Adam\A31.txt" />
+    <None Include="Assets\Paths\Adam\A20.txt" />
+    <None Include="Assets\Paths\Adam\A17.txt" />
     <None Include="Assets\Paths\GradDescs\G38.txt" />
     <None Include="Assets\Paths\GradDescs\G2.txt" />
     <None Include="Assets\Paths\GradDescs\G43.txt" />
+    <None Include="Assets\Paths\Adam\A3.txt" />
+    <None Include="Assets\Paths\Adam\A11.txt" />
+    <None Include="Assets\Paths\Adam\A39.txt" />
+    <None Include="Assets\Paths\Adam\A14.txt" />
     <None Include="Assets\Paths\GradDescs\G20.txt" />
     <None Include="Assets\Paths\GradDescs\G9.txt" />
     <None Include="Assets\Paths\Bees\Bee4.txt" />
+    <None Include="Assets\Paths\Adam\A37.txt" />
     <None Include="Assets\Paths\Bees\Bee17.txt" />
+    <None Include="Assets\Paths\Adam\A21.txt" />
     <None Include="Assets\Paths\Bees\Bee5.txt" />
+    <None Include="Assets\Paths\Adam\A35.txt" />
+    <None Include="Assets\Paths\Adam\A7.txt" />
     <None Include="Assets\Paths\GradDescs\G34.txt" />
     <None Include="Assets\Paths\Bees\Bee0.txt" />
     <None Include="Assets\Paths\GradDescs\G33.txt" />
     <None Include="Assets\Paths\Bees\Bee7.txt" />
     <None Include="Assets\Paths\GradDescs\G18.txt" />
+    <None Include="Assets\Paths\Adam\A38.txt" />
+    <None Include="Assets\Paths\Adam\A25.txt" />
     <None Include="Assets\Paths\GradDescs\G4.txt" />
     <None Include="Assets\Paths\Bees\Bee13.txt" />
+    <None Include="Assets\Paths\Adam\A47.txt" />
     <None Include="Assets\Paths\GradDescs\G7.txt" />
     <None Include="Assets\Paths\MHs\MH1.txt" />
     <None Include="Assets\Paths\GradDescs\G29.txt" />
     <None Include="Assets\Paths\GradDescs\G13.txt" />
     <None Include="Assets\Paths\GradDescs\G46.txt" />
     <None Include="Assets\Paths\MHs\MH0.txt" />
+    <None Include="Assets\Paths\Adam\A41.txt" />
     <None Include="Assets\Paths\Bees\Bee16.txt" />
     <None Include="Assets\Paths\GradDescs\G44.txt" />
+    <None Include="Assets\Paths\Adam\A32.txt" />
+    <None Include="Assets\Paths\Adam\A18.txt" />
     <None Include="Assets\Paths\GradDescs\G0.txt" />
     <None Include="Assets\Paths\GradDescs\G30.txt" />
     <None Include="Assets\Paths\GradDescs\G22.txt" />
     <None Include="Assets\Paths\GradDescs\G1.txt" />
     <None Include="Assets\Paths\MHs\MH6.txt" />
     <None Include="Assets\Paths\Bees\Bee6.txt" />
+    <None Include="Assets\Paths\Adam\A46.txt" />
+    <None Include="Assets\Paths\Adam\A44.txt" />
     <None Include="Assets\Paths\GradDescs\G41.txt" />
+    <None Include="Assets\Paths\Adam\A12.txt" />
     <None Include="Assets\Paths\GradDescs\G23.txt" />
+    <None Include="Assets\Paths\Adam\A22.txt" />
     <None Include="Assets\Paths\GradDescs\G40.txt" />
     <None Include="Assets\Paths\MHs\MH2.txt" />
+    <None Include="Assets\Paths\Adam\A13.txt" />
+    <None Include="Assets\Paths\Adam\A24.txt" />
     <None Include="Assets\Paths\MHs\MH5.txt" />
+    <None Include="Assets\Paths\Adam\A8.txt" />
     <None Include="Assets\Paths\Bees\Bee9.txt" />
     <None Include="Assets\Paths\GradDescs\G39.txt" />
     <None Include="Assets\Paths\MHs\MH4.txt" />
@@ -152,39 +199,43 @@
     <None Include="Assets\Paths\Bees\Bee10.txt" />
     <None Include="Assets\Paths\Bees\Bee12.txt" />
     <None Include="Assets\Paths\GradDescs\G8.txt" />
+    <None Include="Assets\Paths\Adam\A5.txt" />
+    <None Include="Assets\Paths\Adam\A36.txt" />
+    <None Include="Assets\Paths\Adam\A4.txt" />
     <None Include="Assets\Paths\GradDescs\G47.txt" />
+    <None Include="Assets\Paths\Adam\A43.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/ProbeLightingTest/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/Mariana/UnityProj/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/ProbeLightingTest/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/Mariana/UnityProj/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/ProbeLightingTest/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/Mariana/UnityProj/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/ProbeLightingTest/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/Mariana/UnityProj/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/ProbeLightingTest/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/Mariana/UnityProj/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/ProbeLightingTest/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/Mariana/UnityProj/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/ProbeLightingTest/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/Mariana/UnityProj/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/ProbeLightingTest/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/Mariana/UnityProj/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/ProbeLightingTest/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/Mariana/UnityProj/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/ProbeLightingTest/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/Mariana/UnityProj/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/ProbeLightingTest/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/louisrobinson/Documents/Unity-Projects/Mariana/UnityProj/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2019.2.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

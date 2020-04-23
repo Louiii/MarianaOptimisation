@@ -50,9 +50,9 @@ paths = []
 n = 7
 for xi in np.linspace(0.1, 0.9, n):
 	for yi in np.linspace(0.1, 0.9, n):
-		xs, gs = gradDescent(np.array([xi, yi]))
+		xs, gs = gradDescent(np.array([xi, yi]), alpha=0.001)
 		paths.append(xs)
-		# plotpath(xs, gs)
+		# plotpath(np.array(xs)[:,:2], gs)
 
 for i, p in enumerate(paths):
     mat = np.matrix(np.array(p))

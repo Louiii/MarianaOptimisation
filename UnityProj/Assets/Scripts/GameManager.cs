@@ -8,10 +8,12 @@ public class GameManager : MonoBehaviour
     public GameObject Gibbs;
     public GameObject Hive;
     public GameObject Grad;
-    static string[] textlist = { "        Bee Colony       ",
-                          "   Gradient Descent    ",
-                          "    Gibbs Sampling     ",
-                          "  Metropolis-Hastings  "};
+    public GameObject Adam;
+    static string[] textlist = { " Artificial Bee Colony  ",
+                                 "    Gradient Descent    ",
+                                 "             Adam      ",
+                                 "      Gibbs Sampling     ",
+                                 "   Metropolis-Hastings  "};
     string text = textlist[0];
     private GUIStyle guiStyle = new GUIStyle();
 
@@ -29,6 +31,7 @@ public class GameManager : MonoBehaviour
         MH.SetActive(false);
         Gibbs.SetActive(false);
         Grad.SetActive(false);
+        Adam.SetActive(false);
         Hive.SetActive(false);
     }
 
@@ -37,17 +40,26 @@ public class GameManager : MonoBehaviour
         Hive.GetComponent<BeeHive>().Clear();
         Deactivate();
         Grad.SetActive(true);
-        Invoke("ActivateGibbs", 10.0f);
+        Invoke("ActivateAdam", 10.0f);
         text = textlist[1];
+    }
+
+    void ActivateAdam()
+    {
+        Grad.GetComponent<GradSpawner>().Clear();
+        Deactivate();
+        Adam.SetActive(true);
+        Invoke("ActivateGibbs", 20.0f);
+        text = textlist[2];
     }
 
     void ActivateGibbs()
     {
-        Grad.GetComponent<GradSpawner>().Clear();
+        Adam.GetComponent<AdamSpawner>().Clear();
         Deactivate();
         Gibbs.SetActive(true);
         Invoke("ActivateMH", 20.0f);
-        text = textlist[2];
+        text = textlist[3];
     }
 
     void ActivateMH()
@@ -60,7 +72,7 @@ public class GameManager : MonoBehaviour
         }
         Deactivate();
         MH.SetActive(true);
-        text = textlist[3];
+        text = textlist[4];
     }
 
     void OnGUI()
